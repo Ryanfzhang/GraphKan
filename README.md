@@ -9,4 +9,9 @@ In this repository, we implement the Graphkan with pytorch_geometric. Hence, you
 
 ## Usage
 If you want to use GraphKan on your own task, you can replace original ChebConv with the kanChebConv in model/GNNs.py. 
-Thanks to the efficient-kan (https://github.com/Blealtan/efficient-kan/)
+
+## Tips
+(1) You can use different kinds of KAN, such as [FourierKan](https://github.com/GistNoesis/FourierKAN), [ChebyKan](https://github.com/SynodicMonth/ChebyKAN). Unfortunately, FourierKAN and ChebyKan do not work on our tasks, the reason still needs to be investigated.
+(2) LayerNorm or BatchNorm may be neccessary.
+
+Thanks to the [efficient-kan](https://github.com/Blealtan/efficient-kan/).
