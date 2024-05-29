@@ -1,6 +1,6 @@
 # Graphkan: Implementation of Graph Neural Network version of Kolmogorov Arnold Networks with torch geometrics
 
-In this repository, we implement the Graphkan with pytorch_geometric. Hence, you can easily utilize the GraphKan on your own graph task. And we test our GraphKan on signal classification tasks, results are as below.
+In this repository, we have implemented Graphkan using pytorch_geometric. Therefore, you can easily apply GraphKan to your own graph tasks. We have tested GraphKan on signal classification tasks, and the results are as follows.
 
 | Model     | Set 1 | Set 2 | Set 3 | Set 4 |
 | ----------- | ----------- |----------- |----------- |----------- |
@@ -11,7 +11,8 @@ In this repository, we implement the Graphkan with pytorch_geometric. Hence, you
 If you want to use GraphKan on your own task, you can replace original ChebConv with the kanChebConv in model/GNNs.py. 
 
 ## Tips
-(1) You can use different kinds of KAN, such as [FourierKan](https://github.com/GistNoesis/FourierKAN), [ChebyKan](https://github.com/SynodicMonth/ChebyKAN). Unfortunately, FourierKAN and ChebyKan do not work on our tasks, the reason still needs to be investigated.
-(2) LayerNorm or BatchNorm may be neccessary.
+(1) You can utilize various types of KAN, including [FourierKan](https://github.com/GistNoesis/FourierKAN), [ChebyKan](https://github.com/SynodicMonth/ChebyKAN) and so on. However, it is unfortunate that FourierKAN and ChebyKAN are not effective for our tasks, and further investigation is needed to determine the cause.
+
+(2) According to our experiments, the inclusion of LayerNorm or BatchNorm in your network may be necessary.
 
 Thanks to the [efficient-kan](https://github.com/Blealtan/efficient-kan/).
