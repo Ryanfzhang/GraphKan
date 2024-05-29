@@ -16,7 +16,7 @@ def main(S_name,max_epoch,isenhanced,pe,pf):
     print(graph)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model = GCNNet768(graph).to(device)
+    model = kanGCNNet(graph).to(device)
     data = graph.to(device)
     optimizer = torch.optim.Adam(model.parameters())
     lr_schedule = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, max_epoch, eta_min=1e-4)
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     for S_name in ['S1','S2','S3','S4']:
         for isenhanced in [False]:
             best_vali_acc,best_test_acc = main(S_name=S_name,max_epoch=200,isenhanced = False,pe=0.1,pf=0.1)
-            np.save('../results_base/' + S_name + '/' + str(isenhanced) + '_best_vali_'+ '.npy', best_vali_acc)
-            np.save('../results_base/' + S_name + '/' + str(isenhanced) + '_best_test_'+ '.npy', best_test_acc)
+            np.save('../results/' + S_name + '/' + str(isenhanced) + '_best_vali_'+ '.npy', best_vali_acc)
+            np.save('../results/' + S_name + '/' + str(isenhanced) + '_best_test_'+ '.npy', best_test_acc)
 
 
