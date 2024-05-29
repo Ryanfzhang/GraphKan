@@ -8,6 +8,7 @@ In this repository, we have implemented Graphkan using pytorch_geometric. Theref
 | GCN with  Kolmogorov Arnold Networks  |  0.9643       |0.9600 |0.9214|0.8400|
 
 Learning curve on S1 is as below.
+
 ![image](https://github.com/Ryanfzhang/GraphKan/assets/150044070/de152261-7ee6-4891-b37b-a1ac7109d549)
 
 
