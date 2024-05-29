@@ -15,7 +15,7 @@ Training log is uploaded as PDF.
 
 GCN: \log\graph.pdf 
 
-GCN with  Kolmogorov Arnold Networks: \log\graphkan.pdf
+GCN with  Kolmogorov Arnold Networks: \log\kangraph.pdf
 ## Usage
 If you want to use GraphKan on your own task, you can replace original ChebConv with the kanChebConv in model/GNNs.py. 
 
