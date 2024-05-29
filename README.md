@@ -7,6 +7,10 @@ In this repository, we have implemented Graphkan using pytorch_geometric. Theref
 | GCN      | 0.9343       |0.9457|0.8871|0.8186|
 | GCN with  Kolmogorov Arnold Networks  |  0.9643       |0.9600 |0.9214|0.8400|
 
+Learning curve on S1 is as below.
+![image](https://github.com/Ryanfzhang/GraphKan/assets/150044070/de152261-7ee6-4891-b37b-a1ac7109d549)
+
+
 ## Usage
 If you want to use GraphKan on your own task, you can replace original ChebConv with the kanChebConv in model/GNNs.py. 
 
