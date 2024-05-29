@@ -11,7 +11,7 @@ Learning curve on S1 is as below.
 
 ![image](https://github.com/Ryanfzhang/GraphKan/assets/150044070/de152261-7ee6-4891-b37b-a1ac7109d549)
 
-
+Training log is uploaded as PDF (\log\graph.pdf->GCN and \log\graphkan.pdf->GCN with  Kolmogorov Arnold Networks).
 ## Usage
 If you want to use GraphKan on your own task, you can replace original ChebConv with the kanChebConv in model/GNNs.py. 
 
