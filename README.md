@@ -1,11 +1,8 @@
-# Graphkan: Implementation of Graph Neural Network version of Kolmogorov Arnold Networks with torch geometrics and its application on signal classification
+# Graphkan: Implementation of Graph Neural Network version of Kolmogorov Arnold Networks with torch geometrics
 
-We implement the Graphkan with pytorch_geometric. Hence, you can easily utilize the GraphKan
+In this repository, we implement the Graphkan with pytorch_geometric. Hence, you can easily utilize the GraphKan on your own graph task. And we test our GraphKan on signal classification tasks, results are as below.
 
-If the gpu (cuda) running fails, change to cpu training by changing:
-
-args.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')  ------> args.device = torch.device('cpu')
-
-Thanks to the original implementations KAN (https://github.com/KindXiaoming/pykan) and FourierKAN (https://github.com/GistNoesis/FourierKAN), you guys are amazing.
-
-Still at experimental stage to see if KAN really works on graph-structured data.
+| Model     | Set 1 | Set 2 | Set 3 | Set 4 |
+| ----------- | ----------- |----------- |----------- |----------- |
+| GCN      | 0.9343       |0.9457|0.8871|0.8186|
+| GCN with  Kolmogorov Arnold Networks  |  0.9643       |0.9600 |0.9214|0.8400|
