@@ -11,6 +11,10 @@ Learning curve on Set 1 is as below.
 
 ![image](https://github.com/Ryanfzhang/GraphKan/assets/150044070/de152261-7ee6-4891-b37b-a1ac7109d549)
 
+We can see that GraphKAN exhibits better expressive power in representation learning compared to original graph networks.
+![image](https://github.com/Ryanfzhang/GraphKan/assets/150044070/699563a3-25a5-44f7-b35f-f3c45553c6b4)
+
+
 Training log is uploaded as PDF.
 
 GCN: \log\graph.pdf 
